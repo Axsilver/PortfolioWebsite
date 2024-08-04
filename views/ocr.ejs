@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+    <title>
+        OCR Test
+    </title>
+</head>
+
+<body>
+    <div>
+        <header>
+            <h1>Welcome</h1>
+            <form action="/ocr" method="POST" enctype="multipart/form-data">
+                Image File: <input type="file" name="ocrphoto[]" value="Please upload an Image" accept="image/png" />
+                <button type="submit">Upload</button>
+            </form>
+        </header>
+        <section>
+            <p>
+                <span>
+                    <%= message %>
+                </span>
+            </p>
+        </section>
+        <footer>
+
+        </footer>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+CREATE DATABASE portfolio_app;
+USE portfolio_app;
+
+CREATE TABLE notes (
+    id integer PRIMARY KEY AUTO_INCREMENT,
+    title VARCHAR(255) NOT NULL,
+    contents TEXT NOT NULL,
+    created TIMESTAMP NOT NULL DEFAULT NOW()
+);
+
+
+CREATE USER 'sterling'@'localhost' IDENTIFIED WITH mysql_native_password BY 'a3z3HhZx';
+GRANT ALL PRIVILEGES ON portfolio_app.* TO 'sterling'@'localhost';
+
+INSERT INTO notes (title, contents)
+VALUES
+('A little note about me', 'My name is Sterling'),
+('A little note about me', 'I like Yume');
+
+sudo apt install -y debian-keyring debian-archive-keyring apt-transport-https curl
+curl -1sLf 'https://dl.cloudsmith.io/public/caddy/stable/gpg.key' | sudo gpg --dearmor -o /usr/share/keyrings/caddy-stable-archive-keyring.gpg
+curl -1sLf 'https://dl.cloudsmith.io/public/caddy/stable/debian.deb.txt' | sudo tee /etc/apt/sources.list.d/caddy-stable.list
+sudo apt update
+sudo apt install caddy
+
+https://www.sammeechward.com/deploying-full-stack-js-to-aws-ec2
+
+rsync -avz --exclude 'node_modules' --exclude '.git' --exclude '.env' \
+-e "ssh -i ~/Projects/SSH/my-portfolio-web-key.pem" \
+. ubuntu@ec2-100-24-21-227.compute-1.amazonaws.com:~/app
+
+
+
+ssh -i "my-portfolio-web-key.pem" ubuntu@ec2-100-24-21-227.compute-1.amazonaws.com
+
+npm i mysql2
+npm i dotenv
+npm install "express@>=5.0.0-beta.1" --save
+npm i -D nodemon
+
+npm install @google-cloud/vision
+npm install multer
