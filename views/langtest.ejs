@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<%- include('partials/head') %>
+
+    <body>
+        <%- include('partials/navbar') %>
+            <div>
+                <header>
+                    <h1>
+                        <%- lingua.content.description %>
+                    </h1>
+
+                </header>
+                <section>
+                    <p>
+                        <span>
+                            <a id="ocrResult"></a>
+                        </span>
+                    </p>
+                </section>
+                <section class="container">
+                    <form id="toolbar" enctype="multipart/form-data">
+                        <div id="drawandup">
+                            <button id="clear">Clear</button>
+                            <input type="file" id="ocrphoto" name="ocrphoto" value="Please upload an Image"
+                                accept="image/png" />
+                            <div class="drawing-board">
+                                <canvas width="300" height="300" style="width: 300px; height: 300px;"
+                                    id="drawing-board">
+                                </canvas>
+                            </div>
+                        </div>
+                        <button type="button" onclick="getOCR('/ocr');">Upload</button>
+                    </form>
+
+                </section>
+                <script src="/draw.js"></script>
+                <footer>
+
+                </footer>
+            </div>
+    </body>
+
+</html>

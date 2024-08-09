@@ -20,6 +20,12 @@ const visionClient = new ImageAnnotatorClient(CONFIG);
 
 export async function getText(path) {
     let [result] = await visionClient.textDetection(path)
-    return result.textAnnotations[0].description;
+    console.log(result)
+    if (result.textAnnotations.length > 0) {
+        return result.textAnnotations[0].description;
+    }
+    else {
+        return 'Image not clear enough/ not of right format.';
+    }
 }
 

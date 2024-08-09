@@ -1,11 +1,84 @@
+html,
 body {
-    background-color: powderblue;
+    background-color: rgb(28, 48, 51);
+    color: rgb(213, 213, 213);
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    border: 0;
+
+
+    padding-top: 5px;
+    text-align: justify;
+    line-height: 200%;
+    font-family: "Montserrat";
+    font-size: small;
+
 }
 
-.my-class {
-    color: orange;
+@font-face {
+    font-family: Coolvetica;
+    src: url('fonts/coolvetica.otf');
+    font-family: LonelyCoffee;
+    src: url('fonts/LonelyCoffee.ttf');
+    font-family: BlackoutSunrise;
+    src: url('fonts/BlackoutSunrise.ttf');
 }
 
 h1 {
-    color: purple;
+    font-family: Coolvetica;
+    padding-left: 0%;
+}
+
+
+
+.topnav {
+    font-family: BlackoutSunrise;
+    background-color: #333;
+    overflow: hidden;
+}
+
+
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+
+.topnav a:hover {
+    color: black;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 300;
+    overflow: hidden;
+}
+
+.drawing-board {
+    display: flex;
+    max-width: 300;
+}
+
+.drawandup {
+    display: flex;
+    flex-direction: row;
+    width: 50;
+    padding: 5px;
+    text-align: center;
+
+}
+
+.toolbar {
+    display: flex;
+    flex-direction: column;
+    width: 50;
+    padding: 5px;
+    text-align: left;
+
 }

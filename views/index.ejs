@@ -1,31 +1,25 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <link rel="stylesheet" type="text/css" href="/css/style.css" />
-    <title>
-        <%= title %>
-    </title>
-</head>
+<%- include('partials/head') %>
+    <%- include('partials/navbar') %>
 
-<body>
-    <div>
-        <header>
-            <h1>Welcome</h1>
-            <p>俺は<%= message %>が大好きだ！
-            </p>
-        </header>
-        <section>
-            <h1>Body Test</h1>
-            <p>
-                <span class="my-class">Hello</span>
-            </p>
-        </section>
-        <footer>
+        <body>
 
-        </footer>
-    </div>
-</body>
+            <%- include('partials/language') %>
+                <div>
+                    <header>
+                        <h1>
+                            <%= myPage.AboutMeText %>
+                        </h1>
+
+                    </header>
+
+
+                    <footer>
+
+                    </footer>
+                </div>
+        </body>
 
 </html>

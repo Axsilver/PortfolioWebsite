@@ -40,3 +40,5 @@ npm i -D nodemon
 
 npm install @google-cloud/vision
 npm install multer
+
+npm i i18next i18next-http-middleware i18next-fs-backend i18next-browser-languagedetector ajax

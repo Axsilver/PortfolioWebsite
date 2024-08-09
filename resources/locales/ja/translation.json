@@ -1,0 +1,13 @@
+{
+    "ocr": {
+        "title": "OCR",
+        "OCRInstruct": "PNGを選択し、アップロードすればPNGファイルから文章にしてくれます。この機能はグーグルVisionのAPIを使って行っています。",
+        "lang": "ja"
+    },
+    "index": {
+        "title": "Index",
+        "AboutMeText": "スターリングと申します。テキサス大学 - ダラス２０２２年卒のアメリカ人プログラマーです。問題を解決するのが好きでプログラマーやっています。プログラミング以外の趣味としてはゲーム作りとTRPG最近よく遊んでいます。",
+        "lang": "ja"
+    },
+    "greeting": "hello but translated!"
+}

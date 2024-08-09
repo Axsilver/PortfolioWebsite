@@ -1,0 +1,13 @@
+{
+    "ocr": {
+        "title": "OCR",
+        "OCRInstruct": "Please choose a PNG file and click upload to get a text annotation from the PNG. This conversion makes use of the Google Vision API.",
+        "lang": "en"
+    },
+    "index": {
+        "title": "Index",
+        "AboutMeText": "My name is Sterling Gayle. I am a software engineer that graduated from the University of Texas at Dallas in 2022 and have experience as an intern at Texas Instruments as well as as a Software Developer at HCL Technologies. I enjoy solving puzzles and learning new things. Some of my passions beyond Software Dev is Game Dev and playing TRPGs.",
+        "lang": "en"
+    },
+    "greeting": "hello but translated!"
+}
